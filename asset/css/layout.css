@@ -1,0 +1,642 @@
+@import './reset.css';
+@import './common.css';
+
+
+/**************** 큰틀 잡이 ****************/
+
+/**************** 상단 ****************/
+.header .header-top {
+    border-bottom: 1px solid #e4e8eb;
+}
+.header .header-top .inner{
+    position: relative;
+    width: 1130px;
+    height: 160px;
+    margin: 0 auto;
+    /* padding: 0 30px; */
+}
+
+/******** 로고 ********/
+.header .logo{
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    margin-top: -32px;
+}
+.header .logo a{
+    display: block;
+}
+.header .logo a:after{
+    content: '';
+    display: block;
+    width: 222px;height: 52px;
+    background-position: 0 -158px;
+}
+
+/******** 검색창 ********/
+.header .search-area {
+    position: absolute;
+    top: 50%;
+    left: 238px;
+    margin-top: -28px;
+}
+
+.header .search-area .wrap{
+    position: relative;
+    width: 582px;
+    height: 52px;
+    border: 2px solid #19ce60;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.header .search-area .input-text{
+    width: 444px;
+    height: 24px;
+    padding: 13px 15px;
+    margin: 1px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+    outline: 0;
+}
+
+.header .search-area .btn-submit{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: 0;
+    width: 56px;
+    height: 56px;
+    background-color: #19ce60;
+    -webkit-border-radius: 0 2px 2px 0;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+.header .search-area .btn-submit::after{
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-position: -420px 0;
+    vertical-align: top;
+}
+
+/* 키보드 */
+.header .btn-keyboard {
+    position: absolute;
+    top: 0;
+    right: 84px;
+    bottom: 0;
+    width: 36px;
+    z-index: 400;
+}
+.header .btn-keyboard::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    background-position: -420px -402px;
+    vertical-align: top;
+    margin: -6px 0 0 -10px;
+}
+
+/* 자동완성 버튼 */
+.header .btn-arw {
+    position: absolute;
+    top: 0;
+    right: 64px;
+    bottom: 0;
+    width: 22px;
+}
+
+.header .btn-arw::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 5px;
+    background-position: -408px -100px;
+    vertical-align: top;
+}
+/******** 서비스 구역 ********/
+
+.header .service-area {
+    position: absolute;
+    top: 12px;
+    right: 27px;
+    display: flex;
+}
+.header .service-area .link-start {
+    font-size: 11px;
+    color: #404040;
+}
+.header .service-area .link-start::after{
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-position: -308px -345px;
+    vertical-align: top;
+    margin: -3px 0 0 3px;
+}
+.header .service-area .bar{
+    width: 1px;
+    height: 10px;
+    margin: 3px 7px;
+    background-color: #e4e8eb;
+}
+.header .service-area .link-junior::after {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 10px;
+    background-position: -262px -330px;
+    vertical-align: top;
+    margin: 3px;
+}
+.header .service-area .link-junior:hover::after{
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 10px;
+    background-position: -200px -330px;
+    vertical-align: top;
+}
+.header .service-area .link-bean {
+    margin-left: 6px
+}
+.header .service-area .link-bean::after {
+    content: '';
+    display: inline-block;
+    width: 34px;
+    height: 11px;
+    background-position: -369px -299px;
+    vertical-align: top;
+    margin: 3px 3px 2px;
+}
+.header .service-area .link-bean:hover::after {
+    content: '';
+    display: inline-block;
+    width: 34px;
+    height: 11px;
+    background-position: -380px -199px;
+    vertical-align: top;
+    margin: 3px 3px 2px;
+}
+
+
+/**************** GNB 구역 ****************/
+
+.header .header-bottom {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+.header .header-bottom .inner {
+    width: 1130px;
+    padding: 0 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .gnb {
+    padding: 11px 0;
+    display: flex;
+    letter-spacing: -.3px;
+}
+.header .gnb .gnb-list{
+    display: flex;
+}
+.header .gnb .gnb-item+.gnb-item{
+    margin-left: 12px;
+    
+}
+
+.header .gnb .gnb-item > a {
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #19ce60;
+}
+
+.header .gnb .gnb-item:nth-child(1)::before {
+    content: '';
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-position: -420px -73px;
+    vertical-align: top;
+    margin: 3px 9px 0 0;
+}
+.header .gnb .nav-shop::before {
+    display: inline-block;
+    content: '';
+    width: 24px;
+    height: 20px;
+    background-position: -154px -389px;
+    vertical-align: -4px;
+}
+.header .gnb .nav-live::before {
+    display: inline-block;
+    width: 54px;
+    height: 20px;
+    background-position: -202px -299px;
+    vertical-align: -4px;
+    content: '';
+}
+
+.header .gnb .gnb-item:last-child::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    background-position: -444px -49px;
+    vertical-align: top;
+    margin: 9px 2px 0 0;
+}
+
+/* my fav */
+
+.header .gnb .list-nav {
+    display: flex;
+    margin-left: 12px;
+    letter-spacing: -.3px;
+}
+.header .gnb .nav-item+.nav-item{
+    margin-left: 12px;
+}
+
+.header .gnb .nav-item > a {
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: inherit;
+}
+
+
+.header .gnb .btn-more {
+    margin-left: 17px;
+    font-size: 13px;
+    line-height: 30px;
+    color: #202020;
+    text-align: right;
+    letter-spacing: normal;
+}
+
+.header .gnb .btn-more::after {
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 7px;
+    background-position: -444px -339px;
+    /* vertical-align: top; */
+    content: '';
+    margin-left: 7px;
+    vertical-align: 2px;
+}
+
+/********** weather area **********/
+.header .group-weather {
+    max-width: 270px;
+    height: 52px;
+    position: relative;
+}
+
+.header .weather-area {
+    display: flex;
+    overflow: hidden;
+    /* display: inline-block; */
+    max-width: 100%;
+    padding: 12px 0 11px;
+    font-size: 13px;
+    line-height: 29px;
+    vertical-align: top;
+}
+
+.header .weather-area a::before {
+    display: inline-block;
+    width: 29px;
+    height: 30px;
+    background-position: -62px 0;
+    vertical-align: top;
+    content: '';
+    /* margin: 10px 10px 0 0; */
+    margin-right: 5px;
+    
+}
+/* 
+.header .current-box {
+    
+} */
+
+.header .current {
+    font-weight: bold;
+    font-size: 15px;
+}
+.header .state {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.header .degree-box {
+    margin-left: 9px;
+}
+.header .degree-box .min {
+    color: #2586ee;
+}
+.header .degree-box .max::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 11px;
+    background-position: -444px -392px;
+    margin: 0 3px;
+    vertical-align: -1px;
+}
+.header .degree-box .max {
+    color: #e9564a;
+}
+.header .location {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    padding-left: 9px;
+    color: grey;
+    text-align: right;
+    font-size: 12px;
+}
+
+
+/* main */
+
+.container {
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+
+}
+
+/**************** 하단 ****************/
+.footer {
+    background-color: #fafbfc;
+    border-top: 1px solid #e4e8eb;
+}
+
+.footer .footer-inner {
+    width: 1130px;
+    padding: 0 30px 92px;
+    margin: 0 auto;
+}
+
+.footer .banner-area {
+    overflow: hidden;
+    padding: 24px 0;
+    border-bottom: 1px solid #e4e8eb;
+    display: flex;
+
+}
+
+.footer .main-public {
+    position: relative;
+    width: 350px;
+    height: 86px;
+    font-family: "Malgun Gothic", "맑은 고딕", -apple-system, BlinkMacSystemFont, helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+
+.footer .main-public+.main-public {
+    margin-left: 40px;
+}
+
+.footer .main-public .main-public-wrap {
+    display: flex;
+}
+
+.footer .main-public a, .main-public img {
+    border: none;
+    outline: none;
+}
+
+.footer .main-public a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .main-public-image {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 160px;
+    height: 86px;
+}
+
+.footer .main-public-wrap .main-public-image img {
+    transition: transform .2s;
+}
+
+.footer .main-public-wrap:hover .main-public-image img {
+    transform: scale(1.05);
+} 
+
+.footer .main-public-image::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    content: '';
+}
+
+.footer .main-public-content {
+    overflow: hidden;
+    height: 86px;
+    padding: 2px 2px 0 16px;
+    font-size: 12px;
+    line-height: 1.25;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.footer .main-public-subtitle {
+    display: block;
+    overflow: hidden;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    color: #58c464;
+    white-space: nowrap;
+}
+
+.footer .main-public-title {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.26px;
+    color: #242424;
+    white-space: nowrap;
+}
+
+.footer .main-public-content:hover .main-public-title {
+    text-decoration: underline;
+}
+
+.footer .main-public-desc {
+    margin-top: 8px;
+}
+
+.footer .main-public-desc, .main-public-desc2 {
+    overflow: hidden;
+    line-height: 18px;
+    letter-spacing: -0.25px;
+    color: #424242;
+    white-space: nowrap;
+}
+
+
+/* 공지사항 */
+.footer .notice-area {
+    padding: 16px 0 15px;
+    border-bottom: 1px solid #e4e8eb;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .notice-box .title {
+    margin-right: 13px;
+    color: #202020;
+}
+.footer .notice-box .title a{
+    font-weight: bold;
+}
+
+.footer .notice-area .link-all {
+    font-weight: 700;
+    color: #202020;
+}
+
+.footer .notice-area .link-all:after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background-position: -444px -268px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin-left: 10px;
+    vertical-align: -2px;
+}
+
+/* 여러 연결채널 */
+.footer .aside-area {
+    border-bottom: 1px solid #e4e8eb;
+    display: flex;
+}
+
+.footer .partner-box-wrap {
+    width: 780px;
+    padding: 20px 0;
+}
+
+.footer .partner-box {
+    display: flex;
+}
+
+.footer .partner-box+.partner-box {
+    margin-top: 9px;
+}
+
+.footer .partner-box .title {
+    width: 87px;
+    font-weight: bold;
+}
+
+.footer .partner-box .link-partner {
+    color: #777;
+}
+
+.footer .partner-box .link-partner+.link-partner:before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background-color: #e4e8eb;
+    vertical-align: -1px;
+    margin: 0 8px;
+}
+
+/* whale, flower */
+.footer .service-box-wrap {
+    width: 350px;
+    padding: 28px 0;
+    display: flex;
+}
+
+.footer .service-box {
+    max-width: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer .service-box .service-logo {
+    margin-left: 12px;
+}
+
+.footer .service-box .dsc, .footer .service-box .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    padding-top: 2px;
+}
+
+.footer .service-box .dsc {
+    color: grey;
+}
+
+.footer .service-box+.service-box {
+    margin-left: 50px;
+}
+
+/* 정책 및 약관 */
+.footer .corp-area {
+    padding-top: 25px;
+    display: flex;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.footer .list-corp {
+    margin-right: 13px;
+    display: flex;
+}
+
+.footer .list-corp .corp-item {
+    color: #777;
+}
+
+.footer .list-corp .corp-item+.corp-item:before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    margin: 0 8px;
+    background-color: #e4e8eb;
+    vertical-align: -1px;
+}
+
+.footer .corp-area .addr {
+    color: #202020;
+    font-weight: 700;
+}

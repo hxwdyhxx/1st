@@ -1,0 +1,106 @@
+.wrapper {
+    min-width: 1190px;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+
+
+/* sp area */
+
+.header .logo a::after,
+.header .search-area .btn-submit::after,
+.header .btn-keyboard::after,
+.header .btn-arw::after,
+.header .service-area .link-start::after,
+.header .service-area .link-junior::after,
+.header .service-area .link-bean::after,
+.header .gnb .gnb-item:nth-child(1)::before,
+.header .gnb .nav-shop::before,
+.header .gnb .nav-live::before,
+.header .gnb .gnb-item:last-child::before,
+.header .gnb .btn-more::after,
+.header .degree-box .max::before,
+.sc-news .group-issue .link-media::after,
+.sc-news .group-issue .link-home::after,
+.sc-news .group-title .link-title::before,
+.sc-news .group-title .link-title::after,
+.sc-news .group-title .ic-list::after,
+.sc-news .group-title .ic-tile::after,
+.sc-news .group-title .ic-set::after,
+.sc-news .group-media .btn-prev,
+.sc-news .group-media .btn-next,
+.sc-themecast .group-category .btn-prev,
+.sc-themecast .group-category .btn-next,
+.sc-themecast .group-title .info-area .btn-set:before,
+.sc-themecast .group-category .btn-prev::after,
+.sc-themecast .ico-play::after,
+.sc-themecast .theme-title a.title:after,
+.sc-themecast .media-view-wrap.type-flick .pm-btn-next::after,
+.sc-themecast .btn-more-wrap .btn-more::before,
+.sc-login .link-login::before,
+.sc-login .sub-area .look-box:before,
+.sc-login .sub-area .link-join:before,
+.sc-sidenews .btn-navi.prev::after,
+.sc-sidenews .btn-navi.next::after,
+.sc-sidenews .btn-navi.prev:hover::after,
+.sc-sidenews .btn-navi.next:hover::after,
+.footer .notice-area .link-all:after {
+    background-image: url(../images/sp-img.png);
+    background-repeat: no-repeat;
+    background-size: 457px;
+}
+
+/* weather */
+.header .weather-area a::before {
+    
+        /* bg로만 쓰면 포지션 크기 힘들어서 소분해서쓰기 */
+        background-image: url(../images/weather.png);
+        background-repeat: no-repeat;
+        background-size: 215px 184px;
+        
+        /* 2배 줄임 사이즈 원래 2배 큼 */
+}
+
+/* shop-cast */
+.sc-shopcast .shop-header .link-shop .ls-link::before,
+.sc-shopcast .shop-header .link-shop .ls-link::after,
+.shop-wrap .shop-control .btn-prev::before,
+.shop-wrap .shop-control .btn-next::before,
+.shop-wrap .shop-page .btn-prev::before,
+.shop-wrap .shop-page .btn-next::before,
+.shop-wrap .group-plusdeal .link-logo::before,
+.shop-wrap .group-plusdeal .ico-one-alpha,
+.shop-wrap .group-plusdeal .ico-one-plus,
+.shop-wrap .group-plusdeal .thumb-box+.thumb-box:before  {
+    background-image: url(../images/sp-img01.png);
+    background-repeat: no-repeat;
+    background-size: 107px 101px;
+}
+
+/* thumb-bd */
+.thumb-bd {
+    position: relative;
+    display: block;
+}
+
+.thumb-bd::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000;
+    opacity: .1;
+}
+.thumb-bd img{
+    width: 100%;
+}
+
